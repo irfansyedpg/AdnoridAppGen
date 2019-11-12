@@ -1,0 +1,29 @@
+C:\Users\syed.irfanullah\Desktop\app from Dic\App_dic\App_dic\bin\Debug\App_dic.exe.config
+C:\Users\syed.irfanullah\Desktop\app from Dic\App_dic\App_dic\obj\Debug\App_dic.csprojResolveAssemblyReference.cache
+C:\Users\syed.irfanullah\Desktop\app from Dic\App_dic\App_dic\obj\Debug\App_dic.Form1.resources
+C:\Users\syed.irfanullah\Desktop\app from Dic\App_dic\App_dic\obj\Debug\App_dic.Properties.Resources.resources
+C:\Users\syed.irfanullah\Desktop\app from Dic\App_dic\App_dic\obj\Debug\App_dic.csproj.GenerateResource.Cache
+C:\Users\syed.irfanullah\Desktop\app from Dic\App_dic\App_dic\bin\Debug\App_dic.exe
+C:\Users\syed.irfanullah\Desktop\app from Dic\App_dic\App_dic\bin\Debug\App_dic.pdb
+C:\Users\syed.irfanullah\Desktop\app from Dic\App_dic\App_dic\obj\Debug\App_dic.exe
+C:\Users\syed.irfanullah\Desktop\app from Dic\App_dic\App_dic\obj\Debug\App_dic.pdb
+G:\XML Generator\App_dic\obj\Debug\App_dic.csprojAssemblyReference.cache
+G:\XML Generator\App_dic\obj\Debug\App_dic.Form1.resources
+G:\XML Generator\App_dic\obj\Debug\App_dic.Properties.Resources.resources
+G:\XML Generator\App_dic\obj\Debug\App_dic.csproj.GenerateResource.cache
+G:\XML Generator\App_dic\obj\Debug\App_dic.csproj.CoreCompileInputs.cache
+G:\XML Generator\App_dic\obj\Debug\App_dic.exe
+G:\XML Generator\App_dic\obj\Debug\App_dic.pdb
+G:\XML Generator\App_dic\bin\Debug\App_dic.exe.config
+G:\XML Generator\App_dic\bin\Debug\App_dic.exe
+G:\XML Generator\App_dic\bin\Debug\App_dic.pdb
+G:\XML Generator\App_dic\bin\Debug\Microsoft.Data.Tools.Com.Interop.dll
+G:\XML Generator\App_dic\obj\Debug\App_dic.csproj.CopyComplete
+C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\obj\Debug\App_dic.Form1.resources
+C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\obj\Debug\App_dic.Properties.Resources.resources
+C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\obj\Debug\App_dic.csproj.GenerateResource.Cache
+C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\bin\Debug\App_dic.exe.config
+C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\bin\Debug\App_dic.exe
+C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\bin\Debug\App_dic.pdb
+C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\obj\Debug\App_dic.exe
+C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\obj\Debug\App_dic.pdb
