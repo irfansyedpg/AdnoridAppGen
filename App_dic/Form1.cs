@@ -126,6 +126,9 @@ namespace App_dic
                         listView2.Items[j].SubItems.Add(worksheet.Cells[i + 2, 4].Value + "");
                         listView2.Items[j].SubItems.Add(worksheet.Cells[i + 2, 8].Value + "");
 
+                        listView2.Items[j].SubItems.Add(worksheet.Cells[i + 2, 9].Value + "");
+                        listView2.Items[j].SubItems.Add(worksheet.Cells[i + 2, 10].Value + "");
+
                         j++;
                     }
                     else
@@ -138,6 +141,8 @@ namespace App_dic
                         listView2.Items[j].SubItems.Add(worksheet.Cells[i + 2, 6].Value + "");
                         listView2.Items[j].SubItems.Add(worksheet.Cells[i + 2, 4].Value + "");
                         listView2.Items[j].SubItems.Add(worksheet.Cells[i + 2, 8].Value + "");
+                        listView2.Items[j].SubItems.Add(worksheet.Cells[i + 2, 9].Value + "");
+                        listView2.Items[j].SubItems.Add(worksheet.Cells[i + 2, 10].Value + "");
                         j++;
 
                     }
@@ -177,6 +182,8 @@ namespace App_dic
                 string resp_id = "";
                 string skip_on = "";
                 string tag = "";
+                string rangeMin = "";
+                string rangeMax = "";
 
 
 
@@ -185,6 +192,9 @@ namespace App_dic
                 resp_id = listView2.Items[i].SubItems[2].Text;
                 skip_on = listView2.Items[i].SubItems[4].Text;
                 tag = listView2.Items[i].SubItems[5].Text;
+
+                rangeMin = listView2.Items[i].SubItems[8].Text;
+                rangeMax = listView2.Items[i].SubItems[9].Text;
 
                 if (Globquesiont_id == "?")
                 {
@@ -204,11 +214,12 @@ namespace App_dic
 
                           " <layout xmlns:android='http://schemas.android.com/apk/res/android' " +
                           " xmlns:tools='http://schemas.android.com/tools'" +
-                          " tools:context='.ui.tool2." + xml_layout_name + "'>" +
+                          "xmlns:app='http://schemas.android.com/apk/res-auto'"+
+                           ">"+
                           " <data> <import type='android.view.View' /> <variable" +
                           " name='callback'" +
                           " type='edu.aku.hassannaqvi.template.ui." + xml_layout_name + "'/></data>" +
-                          " <ScrollView style='@style/i_scrollview'   tools:context='.ui.'"+xml_layout_name+">" +
+                          " <ScrollView style='@style/i_scrollview'     android:fadeScrollbars='false'  android:fillViewport='true'  android:scrollbarSize='10dip' tools:context='.ui."+xml_layout_name+"'>" +
                           " <LinearLayout android:id='@+id/GrpName' android:layout_width='match_parent'  android:layout_height='wrap_content'" +
 
                              "android:orientation='vertical'" + ">";
@@ -254,15 +265,16 @@ namespace App_dic
                                             " android:text='@string/" + resp_id + "'" +
                                             " style='@style/radiobutton' />";
 
-                    string xml_edtextview_number = "<EditText " +
+                    string xml_edtextview_number = "<com.edittextpicker.aliazaz.EditTextPicker " +
                                    " android:id='@+id/" + resp_id + "'" +
-                                   " style='@style/EditText_number'" +
+                                   " style='@style/EditTextAlphaNumeric'     android:inputType='number' " +
                                    "  android:hint='@string/" + resp_id + "'" +
                                    (tag.Length != 0 ? " android:tag='" + skip_on + "'" : "") +
                                    (skip_on.Length != 0 ? " android:text=*@{" + skip_on + ".checked ? " + resp_id + ".getText.toString : ''}*" : "") +
                                    (skip_on.Length != 0 ? " android:visibility='@{" + skip_on + ".checked ? View.VISIBLE : View.GONE}'" : "")+
-                                   " android:inputType='number'" +
-                                   " android:maxLength='4' />";
+                                   " app:maxValue='"+rangeMax+"'" +
+                                   " app:minValue='" + rangeMin + "'" +
+                                   " app:type='range' />";
 
 
                     string xml_edtextview_varchar = "<EditText " +
@@ -391,7 +403,11 @@ namespace App_dic
 
                         if (CB_not_start == true)
                         {
-                            all_xml = all_xml + " " + " <LinearLayout android:id='@+id/fldGrpLL" + quesiont_id + "' style='@style/linearlayout_view_wt_bound'>";
+                            all_xml = all_xml + " " + " <LinearLayout android:id='@+id/fldGrpLL" + quesiont_id + "'"+ 
+                            
+                          "android:tag='0' android:layout_width='match_parent'"+
+                        "android:layout_height='wrap_content'   android:orientation='vertical'>";
+                     
                             CB_not_start = false;
                         }
 
@@ -593,6 +609,8 @@ namespace App_dic
 
 
             }
+
+            sd = sd + " fc.setCRFA(String.valueOf(f1));"+ "\n"+"fc.setFormType(\"f1\");";
             save_text_file(sd);
 
            
