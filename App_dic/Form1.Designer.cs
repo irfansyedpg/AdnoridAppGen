@@ -35,6 +35,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.button6 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -43,35 +48,35 @@
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(41, 63);
+            this.button2.BackColor = System.Drawing.Color.LightGray;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.button2.Location = new System.Drawing.Point(46, 49);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(257, 82);
+            this.button2.Size = new System.Drawing.Size(252, 78);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Browse XML";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Text = "Import Dictionary ";
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 25);
+            this.groupBox1.Location = new System.Drawing.Point(85, 76);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(332, 169);
+            this.groupBox1.Size = new System.Drawing.Size(332, 162);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select Excel File";
@@ -79,13 +84,14 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 292);
+            this.groupBox2.Location = new System.Drawing.Point(85, 422);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(332, 378);
+            this.groupBox2.Size = new System.Drawing.Size(332, 306);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Save File";
@@ -93,38 +99,100 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(61, 175);
+            this.button4.BackColor = System.Drawing.Color.LightGray;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.button4.Location = new System.Drawing.Point(46, 172);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(226, 52);
             this.button4.TabIndex = 3;
             this.button4.Text = "Generate English String";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(61, 114);
+            this.button3.BackColor = System.Drawing.Color.LightGray;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.button3.Location = new System.Drawing.Point(46, 111);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(226, 52);
             this.button3.TabIndex = 2;
             this.button3.Text = "Generate Save Drafts";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(61, 55);
+            this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.button1.Location = new System.Drawing.Point(46, 52);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(226, 52);
             this.button1.TabIndex = 1;
             this.button1.Text = "Generate XML";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.LightGray;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.button6.Location = new System.Drawing.Point(46, 231);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(226, 52);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "Generate Urdu String";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(44, 54);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(228, 28);
+            this.textBox1.TabIndex = 37;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Location = new System.Drawing.Point(85, 265);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(332, 132);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Activity Name";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.listView2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1458, 724);
+            this.panel1.TabIndex = 37;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // listView2
             // 
@@ -139,32 +207,30 @@
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader11});
-            this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
-            this.listView2.Location = new System.Drawing.Point(3, 3);
+            this.listView2.Location = new System.Drawing.Point(498, 76);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(1381, 615);
-            this.listView2.TabIndex = 36;
+            this.listView2.Size = new System.Drawing.Size(1226, 645);
+            this.listView2.TabIndex = 37;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
-            this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Question ID";
-            this.columnHeader1.Width = 142;
+            this.columnHeader1.Width = 100;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Type";
-            this.columnHeader2.Width = 136;
+            this.columnHeader2.Width = 40;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "IDs";
-            this.columnHeader3.Width = 100;
+            this.columnHeader3.Width = 40;
             // 
             // columnHeader4
             // 
@@ -174,97 +240,49 @@
             // columnHeader5
             // 
             this.columnHeader5.Text = "Skip On ";
-            this.columnHeader5.Width = 158;
+            this.columnHeader5.Width = 50;
             // 
             // columnHeader6
             // 
             this.columnHeader6.Text = "Tag no";
-            this.columnHeader6.Width = 136;
+            this.columnHeader6.Width = 50;
             // 
             // columnHeader7
             // 
             this.columnHeader7.Text = "responce value";
-            this.columnHeader7.Width = 214;
-            // 
-            // saveFileDialog1
-            // 
-            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(365, 20);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1395, 654);
-            this.tabControl1.TabIndex = 37;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.listView2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1387, 621);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            this.columnHeader7.Width = 50;
             // 
             // columnHeader11
             // 
             this.columnHeader11.Text = "Urdu Text";
+            this.columnHeader11.Width = 280;
             // 
-            // button6
+            // panel2
             // 
-            this.button6.Location = new System.Drawing.Point(61, 234);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(226, 52);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Generate Urdu String";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(73, 242);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 28);
-            this.textBox1.TabIndex = 37;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 210);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 20);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Activity Name";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Location = new System.Drawing.Point(452, 45);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(2, 700);
+            this.panel2.TabIndex = 38;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1761, 1024);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(1458, 724);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "App Generator ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -276,22 +294,22 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.ColumnHeader columnHeader11;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

@@ -744,5 +744,10 @@ namespace App_dic
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

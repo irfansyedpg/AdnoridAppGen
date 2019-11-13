@@ -27,3 +27,4 @@ C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\bin\Debug\App_dic.exe
 C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\bin\Debug\App_dic.pdb
 C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\obj\Debug\App_dic.exe
 C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\obj\Debug\App_dic.pdb
+C:\Users\syed.irfanullah\Desktop\XML Generator\App_dic\obj\Debug\App_dic.csprojResolveAssemblyReference.cache
